@@ -485,12 +485,14 @@ midterm-machine-learning/
 ### Classification (Fraud Detection)
 
 **Metrics Table:**
-| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|-------|----------|-----------|--------|----------|---------|
-| Logistic Regression | [Value] | [Value] | [Value] | [Value] | [Value] |
-| Random Forest | [Value] | [Value] | [Value] | [Value] | [Value] |
-| XGBoost | [Value] | [Value] | [Value] | [Value] | [Value] |
-| **Best Model** | **[Model Name]** | **[Metrics]** | | | |
+ Logistic Regression  Random Forest   XGBoost
+Accuracy              0.827370       0.934907  0.886790
+Precision             0.135875       0.309710  0.208654
+Recall                0.733850       0.699976  0.800387
+F1                    0.229295       0.429420  0.331015
+ROC-AUC               0.859991       0.912810  0.921898
+
+| **Best Model** | **XGBoost** | **ROC-AUC Score: 0.9219** |
 
 **Performance Visualization:**
 ![Classification Model Comparison and ROC Curves](images/Fraud_Detection_Classification/model-comparison-fraud.png)
@@ -500,66 +502,71 @@ midterm-machine-learning/
 ### Regression (Song Year Prediction)
 
 **Metrics Table:**
-| Model | MSE | RMSE | MAE | R² Score |
-|-------|-----|------|-----|----------|
-| Linear Regression | [Value] | [Value] | [Value] | [Value] |
-| Ridge Regression | [Value] | [Value] | [Value] | [Value] |
-| Lasso Regression | [Value] | [Value] | [Value] | [Value] |
-| Random Forest | [Value] | [Value] | [Value] | [Value] |
-| Gradient Boosting | [Value] | [Value] | [Value] | [Value] |
-| XGBoost | [Value] | [Value] | [Value] | [Value] |
-| **Best Model** | **[Model Name]** | **[Metrics]** | | |
+      Linear Regression  Ridge Regression  Lasso Regression  Random Forest  Gradient Boosting    XGBoost
+MSE           90.683006         90.683006         91.731480      84.070142          82.354880  80.793091
+RMSE           9.522763          9.522763          9.577655       9.168977           9.074959   8.988498
+MAE            6.778410          6.778411          6.821053       6.444930           6.357615   6.284292
+R2             0.235951          0.235951          0.227117       0.291668           0.306120   0.319278
+
+| **Best Model** | **XGBoost ** | **R² = 0.3193** |
 
 **Performance Visualization:**
-![Regression Model Comparison](path/to/regression_comparison.png)
-
-**Actual vs Predicted:**
-![Actual vs Predicted](path/to/actual_vs_predicted.png)
+![Regression Model Comparison and Actual vs Predicted](images/Song_Release_Year_Regression/model-comparison-song.png)
 
 ---
 
 ### Clustering (Customer Segmentation)
 
 **Metrics Table:**
-| Model | Silhouette Score | Number of Clusters | Davies-Bouldin Index |
-|-------|------------------|-------------------|----------------------|
-| K-Means | [Value] | [Value] | [Value] |
-| Hierarchical | [Value] | [Value] | [Value] |
-| DBSCAN | [Value] | [Value] | [Value] |
-| **Best Model** | **[Model Name]** | **[Value]** | **[Value]** |
+--- Model 1: K-Means Clustering (k=3) ---
+  Silhouette Score: 0.2353
+  Inertia: 87769.20
+  Number of Clusters: 3
+
+--- Model 2: Hierarchical Clustering (k=3) ---
+  Silhouette Score: 0.2179
+  Number of Clusters: 3
+
+--- Model 3: DBSCAN ---
+  Number of clusters: 1
+  Number of noise points: 0
+  Silhouette Score: Not suitable for DBSCAN with these parameter
+
+| **K-Means** | **Silhouette Score: 0.2353** | ** Number of Clusters: 3** | **[Value]** |
 
 **Elbow Method & Silhouette Scores:**
-![Elbow Method](path/to/elbow_method.png)
+![Elbow Method](images/Customer_Clustering/determining-optimal-number-of-cluster-customer.png)
 
 **Cluster Visualization (PCA):**
-![Cluster Visualization](path/to/cluster_visualization.png)
+![Cluster Visualization](images/Customer_Clustering/visualizing-clusters-customer.png)
+![Cluster Visualization](images/Customer_Clustering/silhouette-analysis-customer.png)
 
 **Cluster Profiles Heatmap:**
-![Cluster Profiles](path/to/cluster_profiles_heatmap.png)
+![Cluster Profiles](images/Customer_Clustering/cluster-profile-heatmap-customer.png)
 
 ---
 
-## 🗺️ How to Navigate the Repository
+## How to Navigate the Repository
 
 ### Quick Links to Each Project
 
 #### 1. **Fraud Detection (Classification)**
-- 📓 **Notebook:** `notebooks/1_Fraud_Detection_Classification.ipynb`
-- 📊 **Visualizations:** `images/Fraud_Detection_Classification/`
-- 📥 **Data:** `dataset/train_transaction.csv`, `dataset/test_transaction.csv`
-- 📤 **Results:** `dataset/submissions/fraud_detection_submission.csv`
+- **Notebook:** `notebooks/1_Fraud_Detection_Classification.ipynb`
+- **Visualizations:** `images/Fraud_Detection_Classification/`
+- **Dataset:** `/content/drive/MyDrive/dataset/train_transaction.csv`, `/content/drive/MyDrive/dataset/test_transaction.csv`
+- **Results:** `data/submissions/fraud_detection_submission.csv`
 
 #### 2. **Song Release Year (Regression)**
-- 📓 **Notebook:** `notebooks/2_Song_Release_Year_Regression.ipynb`
-- 📊 **Visualizations:** `images/Song_Release_Year_Regression/`
-- 📥 **Data:** `dataset/midterm-regresi-dataset.csv`
-- 📤 **Results:** `dataset/submissions/regression_submission.csv`
+- **Notebook:** `notebooks/2_Song_Release_Year_Regression.ipynb`
+- **Visualizations:** `images/Song_Release_Year_Regression/`
+- **Dataset:** `/content/drive/MyDrive/dataset/midterm-regresi-dataset.csv'`
+- **Results:** `data/submissions/regression_submission.csv`
 
 #### 3. **Customer Clustering (Unsupervised Learning)**
-- 📓 **Notebook:** `notebooks/3_Customer_Clustering.ipynb`
-- 📊 **Visualizations:** `images/Customer_Clustering/`
-- 📥 **Data:** `dataset/clusteringmidterm.csv`
-- 📤 **Results:** `dataset/submissions/clustering_results.csv`, `dataset/submissions/cluster_profiles.csv`
+- **Notebook:** `notebooks/3_Customer_Clustering.ipynb`
+- **Visualizations:** `images/Customer_Clustering/`
+- **Dataset:** `/content/drive/MyDrive/dataset/clusteringmidterm.csv`
+- **Results:** `data/submissions/clustering_results.csv`, `dataset/submissions/cluster_profiles.csv`
 
 ### Recommended Reading Order:
 1. Start with **README.md** (this file)
@@ -569,42 +576,35 @@ midterm-machine-learning/
 
 ---
 
-## 📥 Dataset
+## Dataset
 
-⚠️ **IMPORTANT:** Datasets are not included in this repository due to size constraints. You must download them separately and place them in the `dataset/` folder.
+⚠️ **IMPORTANT:** Datasets are not included in this repository due to size constraints. All datasets are accessed directly from Google Drive using Google Colab. Make sure the dataset files are already stored in your Drive under.
+`/MyDrive/dataset/`
 
-### Dataset Download Links
+### Accessing Dataset in Google Colab
 
-Please download the following datasets from Google Drive:
+Before running any notebook, mount your Google Drive:
 
-| Dataset | File Size | Location |
-|---------|-----------|----------|
-| **train_transaction.csv** | ~100 MB | [Download](https://drive.google.com/YOUR_FILE_ID) |
-| **test_transaction.csv** | ~50 MB | [Download](https://drive.google.com/YOUR_FILE_ID) |
-| **midterm-regresi-dataset.csv** | ~30 MB | [Download](https://drive.google.com/YOUR_FILE_ID) |
-| **clusteringmidterm.csv** | ~20 MB | [Download](https://drive.google.com/YOUR_FILE_ID) |
+`from google.colab import drive`
+`drive.mount('/content/drive')`
 
-### Setup Instructions:
+Then load each dataset using the following paths:
 
-1. **Download all CSV files** from the links above
-2. **Create `dataset/` folder** (if not exists):
-   ```bash
-   mkdir dataset
-   mkdir dataset/submissions
-   ```
-3. **Place CSV files** in the `dataset/` folder:
-   ```
-   dataset/
-   ├── train_transaction.csv
-   ├── test_transaction.csv
-   ├── midterm-regresi-dataset.csv
-   └── clusteringmidterm.csv
-   ```
-4. **Proceed with running notebooks** (see Installation section below)
+`train_df = pd.read_csv('/content/drive/MyDrive/dataset/train_transaction.csv')`
+`test_df = pd.read_csv('/content/drive/MyDrive/dataset/test_transaction.csv')`
+`regression_df = pd.read_csv('/content/drive/MyDrive/dataset/midterm-regresi-dataset.csv')`
+`clustering_df = pd.read_csv('/content/drive/MyDrive/dataset/clusteringmidterm.csv')`
 
----
+### Dataset File Requirements
 
-## 🚀 Getting Started
+| Dataset | File Size | Path in Drive |
+|---------|-----------|---------------|
+| **train_transaction.csv** | 667 MB | /MyDrive/dataset/train_transaction.csv |
+| **test_transaction.csv** | 598 MB | /MyDrive/dataset/test_transaction.csv |
+| **midterm-regresi-dataset.csv** | 433 MB | /MyDrive/dataset/midterm-regresi-dataset.csv |
+| **clusteringmidterm.csv** | 988 KB | /MyDrive/dataset/clusteringmidterm.csv |
+
+## Getting Started
 
 ### Prerequisites
 - Python 3.7+
@@ -616,27 +616,21 @@ Please download the following datasets from Google Drive:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/[your-username]/midterm-machine-learning.git
+   git clone https://github.com/bagfat/midterm-machine-learning.git
    cd midterm-machine-learning
    ```
 
-2. **Create a virtual environment (optional but recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install required libraries:**
+2. **Install required libraries:**
    ```bash
    pip install pandas numpy scikit-learn xgboost matplotlib seaborn scipy
    ```
 
-4. **Download datasets:**
-   - Place `train_transaction.csv` and `test_transaction.csv` in `data/` folder
-   - Place `midterm-regresi-dataset.csv` in `data/` folder
-   - Place `clusteringmidterm.csv` in `data/` folder
+3. **Access datasets:**
+   - Place `train_transaction.csv` and `test_transaction.csv` in `data/` folder in Drive
+   - Place `midterm-regresi-dataset.csv` in `data/` folder in Drive
+   - Place `clusteringmidterm.csv` in `data/` folder in Drive
 
-5. **Run Jupyter Notebooks:**
+4. **Run Jupyter Notebooks:**
    ```bash
    jupyter notebook
    ```
@@ -644,7 +638,7 @@ Please download the following datasets from Google Drive:
 
 ---
 
-## 📝 Notebook Structure
+## Notebook Structure
 
 Each Jupyter notebook follows this structure:
 
@@ -660,7 +654,7 @@ Each Jupyter notebook follows this structure:
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 ### Classification (Fraud Detection)
 - Class imbalance handling is crucial for fraud detection
@@ -679,7 +673,7 @@ Each Jupyter notebook follows this structure:
 
 ---
 
-## 📚 References
+## References
 
 - Scikit-learn Documentation: https://scikit-learn.org/
 - XGBoost Documentation: https://xgboost.readthedocs.io/
@@ -688,19 +682,19 @@ Each Jupyter notebook follows this structure:
 
 ---
 
-## 📧 Contact
+## Contact
 
 For questions or issues, please contact:
-- **Email:** [your.email@university.edu]
-- **GitHub:** [@your-github-username](https://github.com/your-username)
+- **Email:** bagussukses0b@gmail.com
+- **GitHub:** https://github.com/bagfat
 
 ---
 
-## 📄 License
+## License
 
 This project is submitted as part of the Machine Learning course assignment.
 
 ---
 
-**Last Updated:** [Date]  
+**Last Updated:** 5-12-2025, 23.17 PM
 **Version:** 1.0
