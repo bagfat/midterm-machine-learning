@@ -318,13 +318,13 @@ This project is submitted as part of the Machine Learning course assignment.
 
 # Machine Learning Midterm Projects
 
-## 📋 Project Overview
+## Project Overview
 
 This repository contains three comprehensive machine learning projects demonstrating different types of machine learning tasks: **Classification**, **Regression**, and **Clustering**. Each project includes data preprocessing, model training, hyperparameter tuning, and detailed evaluation.
 
 ---
 
-## 👤 Identification
+## Identification
 
 **Name:** Bagus Fatkhurrohman  
 **Class:** Machine Learning
@@ -333,7 +333,7 @@ This repository contains three comprehensive machine learning projects demonstra
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 midterm-machine-learning/
@@ -480,7 +480,7 @@ midterm-machine-learning/
 
 ---
 
-## 📊 Model Performance Summary
+## Model Performance Summary
 
 ### Classification (Fraud Detection)
 
@@ -493,10 +493,7 @@ midterm-machine-learning/
 | **Best Model** | **[Model Name]** | **[Metrics]** | | | |
 
 **Performance Visualization:**
-![Classification Model Comparison](path/to/classification_comparison.png)
-
-**ROC Curves:**
-![ROC Curves](path/to/roc_curves.png)
+![Classification Model Comparison and ROC Curves](images/Fraud_Detection_Classification/model-comparison-fraud.png)
 
 ---
 
