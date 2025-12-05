@@ -1,12 +1,12 @@
 # Machine Learning Midterm Projects
 
-## 📋 Project Overview
+## Project Overview
 
 This repository contains three comprehensive machine learning projects demonstrating different types of machine learning tasks: **Classification**, **Regression**, and **Clustering**. Each project includes data preprocessing, model training, hyperparameter tuning, and detailed evaluation.
 
 ---
 
-## 👤 Identification
+## Identification
 
 **Name:** Bagus Fatkhurrohman  
 **Class:** Machine Learning
@@ -15,7 +15,7 @@ This repository contains three comprehensive machine learning projects demonstra
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 midterm-machine-learning/
@@ -40,7 +40,7 @@ midterm-machine-learning/
 
 ---
 
-## 🎯 Project Descriptions
+## Project Descriptions
 
 ### Project 1: Fraud Detection (Classification)
 
@@ -152,7 +152,7 @@ midterm-machine-learning/
 
 ---
 
-## 📊 Model Performance Summary
+## Model Performance Summary
 
 ### Classification (Fraud Detection)
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
@@ -183,7 +183,7 @@ midterm-machine-learning/
 
 ---
 
-## 🗺️ How to Navigate the Repository
+## How to Navigate the Repository
 
 ### 1. **For Fraud Detection Project:**
    - Open: `notebooks/1_Fraud_Detection_Classification.ipynb`
@@ -202,7 +202,7 @@ midterm-machine-learning/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.7+
@@ -241,7 +241,7 @@ midterm-machine-learning/
 
 ---
 
-## 📝 Notebook Structure
+## Notebook Structure
 
 Each Jupyter notebook follows this structure:
 
@@ -257,7 +257,7 @@ Each Jupyter notebook follows this structure:
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 ### Classification (Fraud Detection)
 - Class imbalance handling is crucial for fraud detection
@@ -276,7 +276,7 @@ Each Jupyter notebook follows this structure:
 
 ---
 
-## 📚 References
+## References
 
 - Scikit-learn Documentation: https://scikit-learn.org/
 - XGBoost Documentation: https://xgboost.readthedocs.io/
@@ -285,7 +285,7 @@ Each Jupyter notebook follows this structure:
 
 ---
 
-## 📧 Contact
+## Contact
 
 For questions or issues, please contact:
 - **Email:** bagussukses0b@gmail.com
@@ -293,7 +293,7 @@ For questions or issues, please contact:
 
 ---
 
-## 📄 License
+## License
 
 This project is submitted as part of the Machine Learning course assignment.
 
