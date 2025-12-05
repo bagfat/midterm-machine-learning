@@ -254,10 +254,10 @@ midterm-machine-learning/
 
 ## Dataset
 
-⚠️ **IMPORTANT:** Datasets are not included in this repository due to size constraints. All datasets are accessed directly from Google Drive using Google Colab. Make sure the dataset files are already stored in your Drive under.
+⚠️ **IMPORTANT:** Datasets are not included in this repository due to size constraints. All datasets are accessed directly from Google Drive. Make sure the dataset files are already stored in your Drive under.
 `/MyDrive/dataset/`
 
-### Accessing Dataset in Google Colab
+### Accessing Dataset
 
 Before running any notebook, mount your Google Drive:
 
