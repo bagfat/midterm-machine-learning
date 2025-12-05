@@ -167,14 +167,16 @@ midterm-machine-learning/
 ### Classification (Fraud Detection)
 
 **Metrics Table:**
- Logistic Regression  Random Forest   XGBoost
-Accuracy              0.827370       0.934907  0.886790
-Precision             0.135875       0.309710  0.208654
-Recall                0.733850       0.699976  0.800387
-F1                    0.229295       0.429420  0.331015
-ROC-AUC               0.859991       0.912810  0.921898
+| Model                   | Accuracy | Precision | Recall   | F1 Score | ROC-AUC  |
+| ----------------------- | -------- | --------- | -------- | -------- | -------- |
+| **Logistic Regression** | 0.827370 | 0.135875  | 0.733850 | 0.229295 | 0.859991 |
+| **Random Forest**       | 0.934907 | 0.309710  | 0.699976 | 0.429420 | 0.912810 |
+| **XGBoost**             | 0.886790 | 0.208654  | 0.800387 | 0.331015 | 0.921898 |
 
-| **Best Model** | **XGBoost** | **ROC-AUC Score: 0.9219** |
+| Item              | Value       |
+| ----------------- | ----------- |
+| **Best Model**    | **XGBoost** |
+| **ROC-AUC Score** | **0.9219**  |
 
 **Performance Visualization:**
 ![Classification Model Comparison and ROC Curves](images/Fraud_Detection_Classification/model-comparison-fraud.png)
@@ -184,13 +186,14 @@ ROC-AUC               0.859991       0.912810  0.921898
 ### Regression (Song Year Prediction)
 
 **Metrics Table:**
-      Linear Regression  Ridge Regression  Lasso Regression  Random Forest  Gradient Boosting    XGBoost
-MSE           90.683006         90.683006         91.731480      84.070142          82.354880  80.793091
-RMSE           9.522763          9.522763          9.577655       9.168977           9.074959   8.988498
-MAE            6.778410          6.778411          6.821053       6.444930           6.357615   6.284292
-R2             0.235951          0.235951          0.227117       0.291668           0.306120   0.319278
+| Metric   | Linear | Ridge | Lasso | Random Forest | Gradient Boosting | XGBoost   |
+| -------- | ------ | ----- | ----- | ------------- | ----------------- | --------- |
+| **MSE**  | 90.68  | 90.68 | 91.73 | 84.07         | 82.35             | **80.79** |
+| **RMSE** | 9.52   | 9.52  | 9.58  | 9.17          | 9.07              | **8.99**  |
+| **MAE**  | 6.78   | 6.78  | 6.82  | 6.44          | 6.36              | **6.28**  |
+| **R²**   | 0.236  | 0.236 | 0.227 | 0.292         | 0.306             | **0.319** |
 
-| **Best Model** | **XGBoost ** | **R² = 0.3193** |
+**Best Model: XGBoost (R² = 0.3193)**
 
 **Performance Visualization:**
 ![Regression Model Comparison and Actual vs Predicted](images/Song_Release_Year_Regression/model-comparison-song.png)
@@ -200,21 +203,14 @@ R2             0.235951          0.235951          0.227117       0.291668      
 ### Clustering (Customer Segmentation)
 
 **Metrics Table:**
---- Model 1: K-Means Clustering (k=3) ---
-  Silhouette Score: 0.2353
-  Inertia: 87769.20
-  Number of Clusters: 3
+|      Model       | Silhouette Score | Jumlah Cluster |
+| ---------------- | ---------------- | -------------- |
+| **K-Means**      | 0.2353           | 3              |
+| **Hierarchical** | 0.2179           | 3              |
+| **DBSCAN**       | Not suitable     | 1              |
 
---- Model 2: Hierarchical Clustering (k=3) ---
-  Silhouette Score: 0.2179
-  Number of Clusters: 3
 
---- Model 3: DBSCAN ---
-  Number of clusters: 1
-  Number of noise points: 0
-  Silhouette Score: Not suitable for DBSCAN with these parameter
-
-| **K-Means** | **Silhouette Score: 0.2353** | ** Number of Clusters: 3** | **[Value]** |
+**Best Model: K-Means (Silhouette Score = 0.2353, Clusters = 3)**
 
 **Elbow Method & Silhouette Scores:**
 ![Elbow Method](images/Customer_Clustering/determining-optimal-number-of-cluster-customer.png)
@@ -378,5 +374,5 @@ This project is submitted as part of the Machine Learning course assignment.
 
 ---
 
-**Last Updated:** 5-12-2025, 23.17 PM
+**Last Updated:** 5-12-2025, 23.30 PM
 **Version:** 1.0
