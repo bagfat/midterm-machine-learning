@@ -36,7 +36,7 @@ midterm-machine-learning/
 │       └── visualizing-clusters-customer.png
 │
 ├── notebooks/                                   # Jupyter notebooks
-│       └── submissions/                            # Auto-generated results
+│       └── submissions/                         # Auto-generated results
 │       ├── fraud_detection_submission.csv
 │       ├── regression_submission.csv
 │       ├── clustering_results.csv
