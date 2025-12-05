@@ -173,10 +173,8 @@ midterm-machine-learning/
 | **Random Forest**       | 0.934907 | 0.309710  | 0.699976 | 0.429420 | 0.912810 |
 | **XGBoost**             | 0.886790 | 0.208654  | 0.800387 | 0.331015 | 0.921898 |
 
-| Item              | Value       |
-| ----------------- | ----------- |
-| **Best Model**    | **XGBoost** |
-| **ROC-AUC Score** | **0.9219**  |
+**Best Model: XGBoost (ROC-AUC Score = 0.9219)**
+
 
 **Performance Visualization:**
 ![Classification Model Comparison and ROC Curves](images/Fraud_Detection_Classification/model-comparison-fraud.png)
